@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ziv JS - 4</title>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div></div>
+
+
+
+    <script type="text/javascript">
+        var x = prompt("enter number", "enter number");
+        x = parseInt(x);
+        var y = prompt("enter number", "enter number");
+        y = parseInt(y);
+
+        function checkingKefulot3And17BetweenTowNumbers(x, y) {
+            if (x > y) {
+                var temp = x;
+                x = y;
+                y = temp;
+            }
+            var res = 0
+            for (x; y >= x; x++) {
+                if (x % 3 == 0 || x % 17 == 0) {
+                    res += x + ","
+
+                }
+
+            }
+            alert(res);
+
+        }
+        checkingKefulot3And17BetweenTowNumbers(x, y);
+    </script>
+</body>
+
+</html>
